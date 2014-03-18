@@ -11,29 +11,29 @@ public class HashTable<Key, Value> {
 
     //Adds the value v corresponding with key k. If k already exists in the hashtable,
     //v overwrites k's previously stored value
-    @todo
+    
     public void put(Key k, Value v){
 
     }
 
     //Returns the value associated with key k, or null if k isn't in the hashtable
-    @todo
+    
     public Value get(Key k){
         return null;
     }
 
     //Returns true if the hashtable has key k in it, else false
-    @todo
+    
     public boolean containsKey(Key k){
         return false;
     }
 
     //Doubles the size of table, and re-inserts all key-value pairs
     private void rehash(){
-        Node<Key, Value> temp = table;
+        Node<Key, Value> temp[] = table;
         table = new Node[(2*size)];
         for (Node n : temp){
-            put(n.key, n.value);
+            put(n.k, n.v);
         }
     }
 
@@ -48,7 +48,7 @@ public class HashTable<Key, Value> {
     }
 
     //If load factor exceeds 0.5, return true, else false
-    @todo
+    
     private boolean shouldRehash(){
         return true;
     }
