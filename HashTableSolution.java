@@ -51,6 +51,7 @@ public class HashTableSolution<Key, Value> {
 
     //Doubles the size of table, and re-inserts all key-value pairs
     private void rehash(){
+        size=0;
         Node<Key, Value> temp[] = table;
         table = new Node[(2*table.length)];
         for (Node n : temp){
