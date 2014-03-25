@@ -2,7 +2,7 @@ CS 2110 Recitation 8
 Below are some practice exercises for runtime analysis.
 
 1) What is the time complexity of the foo? (Answer in terms of n and m)
-public foid foo (int n, int m) {
+public void foo (int n, int m) {
     int i = m;
     while(i > 100)
         i /= 3;
