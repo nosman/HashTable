@@ -1,0 +1,30 @@
+CS 2110 Recitation 8
+Below are some practice exercises for runtime analysis.
+
+1) What is the time complexity of the foo? (Answer in terms of n and m)
+public foid foo (int n, int m) {
+    int i = m;
+    while(i > 100)
+        i /= 3;
+    for (int k=i; k>=0; k--) {
+        for (int j=1; j<n; j*=2)
+            System.out.print(k + " " +j+",");
+        System.out.println();
+    }
+}
+
+2) What is the complexity here?
+void foo (int n) {
+    int a = 3;
+    while (a <= n)
+        a *= a*a;
+}
+
+3) Prove by induction that T(n) = T(n-1) + T(0) + n runs in O(n^2)
+
+4)
+public void foolSort(int[] array) {
+    //Write a sort such that is runs in O(n^3)
+    ...
+}
+
